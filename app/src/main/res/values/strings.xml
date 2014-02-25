@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Futebol na TV</string>
+
+    <string name="main_title">UPCOMING MATCHES:</string>
+    <string name="processing">Please wait</string>
+    <string name="main_processing">Refreshing events...</string>
+    <string name="action_about">About</string>
+    <string name="btnRefresh">Refresh</string>
+    <string name="noConnection">Could not connect to the internet.
+Check the connection</string>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Futebol na TV</string>
+    <string name="main_title">PRÓXIMOS JOGOS</string>
+    <string name="processing">Aguarde</string>
+    <string name="main_processing">A actualizar eventos...</string>
+    <string name="action_about">Sobre</string>
+    <string name="btnRefresh">Actualizar</string>
+    <string name="noConnection">Sem ligação à Internet.
+Verifique a ligação.</string>
+</resources>
