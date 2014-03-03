@@ -18,7 +18,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 /**
- * Created by davidgouveia on 23/02/14.
+ * Created by David Gouveia on 23/02/14.
+ * Just a very simple class containing some usefull functions.
  */
 public class Utils {
 
@@ -35,10 +36,9 @@ public class Utils {
         // ARE WE CONNECTED TO THE NET
         if (conMgr.getActiveNetworkInfo() != null
                 && conMgr.getActiveNetworkInfo().isAvailable()
-                && conMgr.getActiveNetworkInfo().isConnected()) {
-
+                && conMgr.getActiveNetworkInfo().isConnected())
             return true;
-        }else
+        else
             return false;
     }
 
@@ -89,7 +89,7 @@ public class Utils {
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
         StringBuilder sb = new StringBuilder();
 
-        String line = null;
+        String line;
         try {
             while ((line = reader.readLine()) != null) {
                 sb.append(line + "\n");

@@ -134,7 +134,9 @@ public class MainActivity extends ActionBarActivity {
 
         @Override
         protected void onPostExecute(String result) {
-            //Toast.makeText(MainActivity.this, result, Toast.LENGTH_LONG).show();
+            /*
+                Split all the content by lines (each line represents an event)
+            */
 
             String[] events;
             if ( result != null && (events = result.split("\n")).length  > 0 )
@@ -144,8 +146,8 @@ public class MainActivity extends ActionBarActivity {
                 for( String event : events)
                 {
                     String[] eventDetails = event.split(";;");
-
-
+                    //Only try to add valid events
+                    if ( eventDetails.length >= 5)
                     adapter.add(new MyEvent(eventDetails[0],
                                             eventDetails[1],
                                             eventDetails[2],
